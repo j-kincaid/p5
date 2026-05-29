@@ -10,12 +10,16 @@ function draw() {
   // ellipse
   ellipse(200, 400, 75, 125);
   stroke(0, 0, 255);
-  fill(0);
+  //yellow fill
+  fill(255, 255, 0);
   // triangle
   triangle(30, 75, 58, 20, 86, 75);
   // quad
   quad(360, 150, 80, 80, 80, 70, 360, 70);
   stroke(15, 0, 255);
+  // ellipse
+  ellipse(600, 500, 175, 125);
+  stroke(0, 0, 255);
   // fill can use alpha 
   fill(85, 0, 255, 100);
   strokeWeight(6);
