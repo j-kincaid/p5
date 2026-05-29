@@ -1,17 +1,20 @@
 function setup() {
   createCanvas(1280, 720);
+  // background layer goes behind the others
+  background(0);
 }
 
 function draw() {
-  // background layer goes behind the others
-  background(0);
+  // LOOPS
+  // ellipse
+  noStroke();
+  fill(250, 255, 0, 80);
+  ellipse(mouseX, mouseY, 75, 75);
+  
   // rectangle
   rect(100, 200, 75, 125);
-  // ellipse
-  ellipse(200, 400, 75, 125);
-  stroke(0, 0, 255);
   //yellow fill
-  fill(255, 255, 0);
+  fill(0, 255, 255);
   // triangle
   triangle(30, 75, 58, 20, 86, 75);
   // quad
@@ -27,4 +30,9 @@ function draw() {
   arc();
   console.log(mouseX);
   console.log(mouseY);
+}
+
+function mousePressed() {
+  // an EVENT: waits for something to happen
+  background(0);
 }
