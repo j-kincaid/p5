@@ -1,22 +1,22 @@
+let squareSize;
+let lineWidth;
 
-let circleX = 100;
-let rad = 100; 
 function setup() {
   // happens once
-  createCanvas(400, 300);
+  createCanvas(1777, 1000);
+  // lineWidth = random(8, 20);
+  background(100);
 }
 
-function mousePressed() {
-  circleX = 4;
-}
 
 function draw() {
   // this function LOOPS
-  // background layer goes behind the others
-  background(0);
-  noStroke();
-  fill(255);
-  circle(circleX, 10, rad);
-  circleX += 0.5;
-  rad += 0.15;
+
+  lineWidth = random(3, 40);
+  squareSize = random(7, 300);
+  rectMode(CENTER);
+  strokeWeight(lineWidth);
+  stroke(0, 0, 255, 10);
+  fill(255, 255, 0, 18);
+  square(200, 150, squareSize);
 }
