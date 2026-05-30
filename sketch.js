@@ -7,16 +7,16 @@ function setup() {
   // happens once
   createCanvas(1280, 720);
   
-  // background layer goes behind the others
-  background(0);
 }
 
 function draw() {
   // this function LOOPS
+  // background layer goes behind the others
+  background(0);
 
   // ellipse
-  // noStroke();
-  // fill(250, 255, 0, 80);
+  stroke(15, 0, strokeB);
+  fill(250, 255, 0, 80);
   ellipse(circleX, 450, 75, 75);
   circleX = circleX + 1;
   
@@ -33,13 +33,13 @@ function draw() {
   stroke(15, 0, strokeB);
   strokeB += 1;
   // // ellipse
-  // ellipse(600, 500, 175, 125);
-  // stroke(0, 0, 255);
+  ellipse(600, 500, 175, 125);
+  stroke(0, 0, 255);
   // // fill can use alpha 
-  // fill(85, 0, 255, 100);
-  // strokeWeight(6);
-  // line(130, 120, 185, 175);
-  // arc();
+  fill(85, 0, 255, 100);
+  strokeWeight(6);
+  line(130, 120, 185, 175);
+  arc();
   console.log(mouseX);
   console.log(mouseY);
 }
