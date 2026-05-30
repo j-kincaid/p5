@@ -2,7 +2,7 @@ let x, y, r, g, b;
 
 function setup() {
   // happens once
-  createCanvas(1777, 1000);
+  createCanvas(windowWidth, windowHeight);
   // lineWidth = random(8, 20);
   background(0);
 }
@@ -10,10 +10,10 @@ function setup() {
 function draw() {
   // this function LOOPS
   r = random(255);
-  g = random(255);
+  g = 0;
   b = random(255);
-  x = random(0, 1777); 
-  y = random(0, 1000); 
+  x = random(0, windowWidth); 
+  y = random(0, windowHeight); 
   noStroke();
   fill(r, g, b, 100);
   circle(x, y, 24);
